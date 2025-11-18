@@ -99,7 +99,7 @@ class _SplashScreenState extends State<SplashScreen>
               SlideTransition(
                 position: _textAnimation,
                 child: const Text(
-                  "ShopSmart",
+                  "ShopSatthi",
                   style: TextStyle(
                     color: Colors.white,
                     fontSize: 32,

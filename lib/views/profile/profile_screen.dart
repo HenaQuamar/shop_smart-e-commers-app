@@ -16,7 +16,7 @@ class ProfileScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            // ===== Gradient Header =====
+
             Container(
               height: 220,
               width: double.infinity,
@@ -62,7 +62,7 @@ class ProfileScreen extends StatelessWidget {
                     child: const CircleAvatar(
                       radius: 45,
                       backgroundImage:
-                          AssetImage("assets/profile_image/k3.jpg"),
+                          AssetImage("assets/profile_image/hena.jpg"),
                     ),
                   ),
                   const SizedBox(width: 16),
@@ -71,7 +71,7 @@ class ProfileScreen extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       Text(
-                        "Kaish",
+                        "hena",
                         style: TextStyle(
                           fontSize: 22,
                           fontWeight: FontWeight.bold,
@@ -80,7 +80,7 @@ class ProfileScreen extends StatelessWidget {
                       ),
                       SizedBox(height: 4),
                       Text(
-                        "kkaish845@gmail.com",
+                        "hena@gmail.com",
                         style: TextStyle(
                           color: Colors.white70,
                           fontSize: 14,
@@ -138,14 +138,7 @@ class ProfileScreen extends StatelessWidget {
                       Navigator.push(context, MaterialPageRoute(builder: (context) => FavoritesScreen(),));
                     },
                   ),
-                  ProfileOption(
-                    icon: Icons.location_on,
-                    title: "Address",
-                    gradientColors: const [Colors.teal, Colors.greenAccent],
-                    onTap: () {
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => ShopingAddress(),));
-                    },
-                  ),
+
                   ProfileOption(
                     icon: Icons.logout,
                     title: "Logout",
@@ -204,8 +197,6 @@ class ProfileScreen extends StatelessWidget {
                                   // Buttons Row
                                   Row(
                                     children: [
-                                      // Cancel Button
-                                      // Cancel Button (highlighted)
                                       Expanded(
                                         child: ElevatedButton(
                                           style: ElevatedButton.styleFrom(
@@ -313,7 +304,7 @@ class ProfileScreen extends StatelessWidget {
   }
 }
 
-// ===== Profile Stats Card =====
+
 class ProfileStatCard extends StatelessWidget {
   final String title;
   final String value;
@@ -373,7 +364,7 @@ class ProfileStatCard extends StatelessWidget {
   }
 }
 
-// ===== Profile Option Card =====
+
 class ProfileOption extends StatefulWidget {
   final IconData icon;
   final String title;
